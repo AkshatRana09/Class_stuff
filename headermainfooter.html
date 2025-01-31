@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT??</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            /* fr=fraction */
+            grid-template-columns: 100px 100px;
+            grid-template-areas: "header header"
+             "main main" 
+             "footer footer";
+            height: 100vh;
+            align-items: center;
+            gap: 10px;
+
+        }
+        .header{
+            background-color: black;
+            /* padding: 200px; */
+            grid-area: header;
+            text-align: center;
+            align-content: center;
+            /* justify-self: center; */
+            display: flex;
+        }
+        .main{
+            /* padding: 175px; */
+            background-color: red;
+            grid-area: main;
+            text-align: center;
+            align-content: center;
+            color: red;
+            display: flex;
+
+        }
+        .sidebar{
+            /* padding: 150px; */
+            background-color: aliceblue;
+            text-align: center;
+            grid-area: sidebar;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            display: flex;
+
+        }
+        .footer{
+            /* padding: 150px; */
+            background-color: yellow;
+            text-align: center;
+            grid-area: footer;
+            align-content: center;
+            color: yellow;
+            display: flex;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><b>HEADER</b></div>
+        <div class="sidebar">SIDEBAR</div>
+        <div class="main"><b>MAIN</b></div>
+        <div class="footer"><b>FOOTER</b></div>
+    </div>
+    
+</body>
+</html>

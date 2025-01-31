@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM</title>
+    <!-- <link rel="icon" type="images/x-icon" href="" /> -->
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            background-color: aliceblue;
+            display: flex;
+            height: 100vh;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 100px 100px;
+            gap:50px;
+            background-color: aliceblue;
+        }
+        .YES{
+            font-size: 5rem;
+            /* color: green; */
+            text-align: center;
+            align-content: center;
+            display: flex;
+            justify-content: center;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .container > .YES:hover{
+            transform: scale(1.3);
+            /* background-color:lightgreen; */
+        }
+        .NO{
+            font-size: 5rem;
+            text-align: center;
+            align-content: center;
+            display: flex;
+            justify-content: center;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .container > .NO:hover{
+            transform: scale(1.3);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="YES">✅</div>
+        <div class="NO">❌</div>
+    </div>
+    
+</body>
+</html>
